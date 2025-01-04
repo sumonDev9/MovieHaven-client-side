@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "poster": "https://i.ibb.co/8cBYwsw/image.png",
+      "title": "Viduthalai 2",
+      "language": "Tamil",
+      "genre": ["Action", "Crime", "Drama"],
+      "releaseDate": "22-Dec-2024"
+    },
+    {
+      "id": 2,
+      "poster": "https://i.ibb.co/Y4Cvbr8/image.png",
+      "title": "Zero Se Restart",
+      "language": "Hindi",
+      "genre": ["Drama"],
+      "releaseDate": "13-Dec-2024"
+    },
+    {
+      "id": 3,
+      "poster": "https://i.ibb.co/NmNN3yY/image.png",
+      "title": "Badass Ravikumar",
+      "language": "Hindi",
+      "genre": ["Action", "Drama"],
+      "releaseDate": "20-Dec-2024"
+    },
+    {
+      "id": 4,
+      "poster": "https://i.ibb.co/kK22FVG/image.png",
+      "title": "Wolf Man",
+      "language": "English",
+      "genre": ["Horror", "Thriller"],
+      "releaseDate": "17-Jan-2025"
+    },
+    {
+      "id": 5,
+      "poster": "https://i.ibb.co/rxTT3Zk/image.png",
+      "title": "Khadaan",
+      "language": "Bengali",
+      "genre": ["Action", "Drama"],
+      "releaseDate": "20-Dec-2024"
+    },
+    {
+      "id": 6,
+      "poster": "https://i.ibb.co/188hvPz/image.png",
+      "title": "Game Changer",
+      "language": "Telugu",
+      "genre": ["Action", "Thriller", "Political"],
+      "releaseDate": "10-Jan-2025"
+    }
+  ]
+  

@@ -1,0 +1,60 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/PcQhGqh/image.png",
+      "title": "Sardar Udham",
+      "hours": "02 : 42",
+      "genre": ["Drama", "Biopic" , "Historical"]
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/TBy9tnh/image.png",
+      "title": "Heropanti 2",
+      "hours": "02 : 19 ",
+      "genre": ["Romance", "Action", "Comedy"]
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/g9Jj1W8/image.png",
+      "title": "Gehraiyaan",
+      "hours": "02 : 28",
+      "genre": ["Drama", "Romance"]
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/k5dvYfL/image.png",
+      "title": "Chennai Central",
+      "hours": "02 : 26 ",
+      "genre": ["Action", "Crime", "Thriller"]
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/4Jm8Vyd/image.png",
+      "title": "Action ",
+      "hours": "02 : 20",
+      "genre": ["Action", "Thriller"]
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/KjmFyQC/image.png",
+      "title": "MCA - Middle Class Abbayi",
+      "hours": "01 : 52",
+      "genre": ["Action", "Romance"]
+    },
+    {
+      "id": 7,
+      "img": "https://i.ibb.co/Sr3kTWT/image.png",
+      "title": "VIP 2 Lalkar",
+      "hours": "01 : 47",
+      "genre": ["Comedy", "Drama"]
+    },
+    {
+      "id": 8,
+      "img": "https://i.ibb.co/vxwY52b/image.png",
+      "title": "Sons Of Liberty",
+      "hours": "01 : 34",
+      "genre": ["Action", "Sci-Fi"]
+    }
+    
+  ]
+  
