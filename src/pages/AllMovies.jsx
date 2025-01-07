@@ -30,6 +30,7 @@ const AllMovies = () => {
         setMovies(sortedMovies);
         setSortOrder(order);
     }
+
     return (
         <div className='dark:bg-slate-800 bg-white dark:text-white'>
             <ScrollRestoration></ScrollRestoration>
@@ -81,7 +82,7 @@ const AllMovies = () => {
            {
             loading? <Loading></Loading> : <div>
                 {
-                movies.length > 0 ? <div className='grid py-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                movies.length > 0 ? <div className='grid py-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                 {
                     movies.map(allmovie => <AllmoviesCard key={allmovie._id} allmovie={allmovie}></AllmoviesCard>)
                 }
