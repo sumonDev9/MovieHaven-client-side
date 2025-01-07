@@ -1,4 +1,6 @@
 import React from 'react';
+import { CiStar } from 'react-icons/ci';
+import { MdAccessTime, MdDateRange } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 const FeaturedMov = ({srotMovie}) => {
@@ -13,15 +15,28 @@ const FeaturedMov = ({srotMovie}) => {
             <div className="card-body  mt-4 p-0">
                 <h2 className="card-title text-primary dark:text-white text-xl font-bold">{movieTitle}</h2>
                 <div className='flex justify-between items-center'>
-                    <div><p><span className='text-primary dark:text-white font-semibold'>Genre:</span> {genre}</p></div>
-                    <div><p><span className='text-primary dark:text-white font-semibold'>Duration:</span> {duration} min</p></div>
+                    <div>
+                        <p>
+                        {
+                        genre.length > 0
+                            ? genre.map((category, index) => (
+                                <span key={index}>{category}{index < genre.length - 1 && ','} </span>
+                            ))
+                            : 
+                        <span>Not Available</span>
+                    }
+                        </p>
+                    </div>
+                    <div>
+                        <p className='flex items-center gap-2'><span className='text-primary dark:text-white font-semibold'><MdAccessTime /></span> {duration} min</p>
+                    </div>
                 </div>
                 <div className='flex justify-between items-center'>
                     <div>
-                        <p className='text-secondary  text-xl dark:text-white font-semibold'><span className='text-primary dark:text-white font-semibold'>Rating:</span> {rating}</p>
+                        <p className='text-secondary  text-xl dark:text-white font-semibold flex items-center gap-1'><span className='text-primary dark:text-white font-semibold'><CiStar className='text-2xl' /></span> {rating}</p>
                     </div>
                     <div>
-                        <p className='text-secondary dark:text-white text-lg'><span className='text-primary font-semibold dark:text-white'>Releaseyear:</span> {releaseYear}</p>
+                        <p className='text-secondary dark:text-white text-lg flex items-center gap-2'><span className='text-primary font-semibold dark:text-white'><MdDateRange /></span> {releaseYear}</p>
                     </div>
                 </div>
                 <div className="card-actions">

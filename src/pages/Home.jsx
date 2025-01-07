@@ -22,7 +22,7 @@ const Home = () => {
     <div className='mt-10 mb-5 border-l-8 border-pink-600 pl-4'>
       <h1 className='text-pink-600 text-3xl font-bold'>Featured Movies</h1>
     </div>
-  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
     {
       moviedata.map(srotMovie => <FeaturedMov key={srotMovie._id} srotMovie={srotMovie}></FeaturedMov>)
     }
