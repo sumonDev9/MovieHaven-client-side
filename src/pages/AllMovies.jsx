@@ -10,7 +10,7 @@ const AllMovies = () => {
     const moviesdata = useLoaderData();
     const [movies, setMovies] = useState(moviesdata);
     const [loading, setLoading] = useState(false);
-
+    const [sortOrder, setSortOrder] = useState("asc");
 
     useEffect(() => {
         setLoading(true)
@@ -22,6 +22,14 @@ const AllMovies = () => {
         })
     },[search]);
     
+    const handleSortChange = (e) => {
+        const order = e.target.value; // Get selected value
+        const sortedMovies = [...movies].sort((a, b) => {
+            return order === "asc" ? a.rating - b.rating : b.rating - a.rating;
+        });
+        setMovies(sortedMovies);
+        setSortOrder(order);
+    }
     return (
         <div className='dark:bg-slate-800 bg-white dark:text-white'>
             <ScrollRestoration></ScrollRestoration>
@@ -29,8 +37,9 @@ const AllMovies = () => {
             <section className='w-11/12 mx-auto'>
                 <div className='pt-10'>
                     <h1 className='text-3xl text-primary dark:text-white font-bold text-center'>All Movie</h1>
-                    {/*  */}
-                    <div className='max-w-lg mx-auto mt-5'>
+                    <div className='flex pb-5 pt-5 md:pt-10 flex-col md:flex-row gap:4 md:gap-8'>
+                   {/* search */}
+                   <div className='bg-gray-100 dark:bg-slate-700 p-3 rounded-lg'>
                         <label className="input input-bordered flex items-center gap-2">
                             <input type="text"
                              onChange={(e) => setSearch(e.target.value)}
@@ -47,6 +56,27 @@ const AllMovies = () => {
                             </svg>
                         </label>
                     </div>
+                    {/* sort price */}
+                    <div className='flex bg-gray-100 dark:bg-slate-700 p-2 rounded-md justify-between items-center w-full'>
+                        <div className='hidden md:flex'>
+                            <p className='text-primary dark:text-white font-medium text-2xl'>movie Of {movies.length}</p>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <p className='text-2xl font-medium'>Sort by Rating:</p>
+                            <div>
+                            <select 
+                            id="sort" 
+                            value={sortOrder} 
+                            onChange={handleSortChange} 
+                            className="w-full py-2 px-4 border rounded-md bg-white dark:bg-slate-700 dark:text-white"
+                        >
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
            {
             loading? <Loading></Loading> : <div>

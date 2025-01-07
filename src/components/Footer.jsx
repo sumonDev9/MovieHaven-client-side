@@ -1,22 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <div className='bg-base-300 dark:bg-black dark:text-white'>
         <footer className="footer   mx-auto w-11/12  p-10">
-            <nav>
-                <h6 className="footer-title">Contact Us</h6>
-                <p>MovieHaven</p>
+        <aside>
+        <img src="https://i.ibb.co/YTtqsbb/movie-haven-logo.png" className='w-12 h-12' alt="" />
+        <p>MovieHaven</p>
                 <p>Email: movieHaven@gmail.com</p>
                 <p>Phone: +880-1234-567890</p>
-            </nav>
+    
+  </aside>
+            {/* <nav>
+                <h6 className="footer-title">Contact Us</h6>
+                <img src="https://i.ibb.co/YTtqsbb/movie-haven-logo.png" className='w-8 h-8' alt="" />
+      
+            </nav> */}
             
             <nav>
                 <h6 className="footer-title">Qiuck Link</h6>
-                <a className="link link-hover">Home</a>
-                <a className="link link-hover">About Us</a>
-                <a className="link link-hover">All Movies</a>
-                <a className="link link-hover">My Favorite</a>
+                <Link to='/' className="link link-hover">Home</Link >
+                <Link to='/allMovie' className="link link-hover">All Movies</Link >
+                <Link to='favoriteMovie' className="link link-hover">My Favorite</Link >
+                <Link to='/trailers' className="link link-hover">Trailers</Link >
             </nav>
             <nav>
                 <h6 className="footer-title">Social</h6>
