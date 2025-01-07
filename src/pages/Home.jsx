@@ -12,10 +12,10 @@ const Home = () => {
  
     return (
       <div className='bg-gray-100 dark:bg-slate-800 dark:text-white'>
-          <nav>
-    <Navbar></Navbar>
-  </nav>
-  <Banner></Banner>
+      {/* navbar */}
+       <Navbar></Navbar>
+      {/* banner */}
+      <Banner></Banner>
  <main className='w-11/12 mx-auto'>
   {/* Featured Movies */}
   <section>
