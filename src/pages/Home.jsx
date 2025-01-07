@@ -6,6 +6,7 @@ import FeaturedMov from '../components/FeaturedMov';
 import Footer from '../components/Footer';
 import OnlineStreaming from '../components/OnlineStreaming';
 import ComingSoon from '../components/ComingSoon';
+import NewsLetter from '../components/NewsLetter';
 
 const Home = () => {
   const moviedata = useLoaderData();
@@ -37,6 +38,9 @@ const Home = () => {
   </section>
   <section>
     <ComingSoon></ComingSoon>
+  </section>
+  <section className='mb-10'>
+    <NewsLetter></NewsLetter>
   </section>
 
  </main>
